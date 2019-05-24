@@ -1,0 +1,40 @@
+<html>
+    <head>Convert Numbers in words</head>
+    <body>
+
+        <div>
+                Ejercicio 2 de la primera semana
+        </div>
+        
+        <script>
+
+            const all_Numbers = [
+                 "uno",
+                 "dos",
+                 "tres",
+                 "cuatro",
+                 "cinco",
+            ];
+
+            const numberInsert = parseInt(prompt());
+
+            const test = all_Numbers.map((i, index)=> {
+                const result = numberInsert.find(e=> e === index);
+                console.log(result)
+                return{
+
+                }
+            })
+
+           
+
+            const index = all_Numbers.indexOf("dos");   
+
+            const result = numberInsert === index ? "uno" : false;
+
+            result !== false ? alert(result) : null
+
+         </script>
+
+    </body>
+</html>
